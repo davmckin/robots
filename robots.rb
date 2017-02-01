@@ -34,7 +34,8 @@ our_class.each do |robo|
   roboclass << Robot.new(robo)
 end
 
+randobo = [Robot, Bendingunit, ActorUnit]
 
-
-
-  jim = Robot.new
+roboclass = our_class.collect { |assign|
+   randobo.sample.new(assign)}
+   puts roboclass.inspect
